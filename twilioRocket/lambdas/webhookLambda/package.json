@@ -1,0 +1,30 @@
+{
+  "name": "twilio-webhook-lambda",
+  "version": "1.0.24",
+  "description": "Twilio webhook lambda",
+  "main": "./lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc -p .",
+    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
+  },
+  "keywords": [
+    "Booster Framework",
+    "Booster Rocket",
+    "Serverless",
+    "AWS IOT Core"
+  ],
+  "author": "Roberto Diaz",
+  "license": "MIT",
+  "dependencies": {
+    "xmlbuilder": "^15.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.14",
+    "@types/uuid": "^8.3.0",
+    "aws-sdk": "^2.820.0",
+    "typescript": "^4.1.3"
+  }
+}

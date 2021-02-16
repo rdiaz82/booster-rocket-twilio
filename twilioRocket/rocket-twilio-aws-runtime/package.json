@@ -1,0 +1,29 @@
+{
+  "name": "rocket-twilio-aws-runtime",
+  "version": "1.0.0",
+  "description": "Booster rocket for Twilio phone call service integration",
+  "main": "./lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc -p .",
+    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install",
+    "release": "npm run build && npm unpublish rocket-twilio-aws-runtime --force && npm publish"
+  },
+  "keywords": [
+    "Booster Framework",
+    "Booster Rocket",
+    "Serverless",
+    "Twilio Phone Call"
+  ],
+  "author": "Roberto Diaz",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "aws-sdk": "^2.844.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.14",
+    "tslib": "^2.0.3"
+  }
+}
